@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    
+    <link rel="stylesheet" href="style.css" />
+    <script src="popup.js"></script>
+  </head>
+  <body>
+    <div class="p-3 d-flex flex-column pop-container">
+      <div class="d-flex">
+          <h1>
+            Water Reminder!
+        </h1>
+      </div>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Remind me every </label>
+        <input type="number" class="form-control" id="timeAmount" />
+      </div>
+      <div class="form-group">
+        <select id="timeUnit">
+          <option value="Seconds">Seconds</option>
+          <option value="Minutes">Minutes</option>
+          <option value="Hours">Hours</option>
+        </select>
+      </div>
+      <div class="d-flex justify-content-between">
+          <button id="saveBtn" class="btn-primary">save</button> 
+          <label class="switch">
+                <input type="checkbox" id="checkbox"/>
+                <span class="slider round"></span>
+              </label>
+      </div>
+      
+    </div>
+  </body>
+</html>
